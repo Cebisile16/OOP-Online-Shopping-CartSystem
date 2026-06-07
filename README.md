@@ -23,6 +23,7 @@ price	double
 Constructor
 Product(String productId, String name, double price)
 
+
 Rules
 productId cannot be null or blank
 name cannot be null or blank
@@ -155,3 +156,45 @@ shopping-cart-assessment/
                     │
                     ├── ProductTest.java
                     └── ShoppingCartTest.java
+
+
+
+
+
+
+
+
+Product
+-------
+Fields:
+- productId
+- name
+- price
+
+Methods:
+- constructor
+- productId()
+- name()
+- price()
+- definePrice()
+- toString()
+
+ShoppingCart
+------------
+Fields:
+- customerName
+- List<Product>
+- OrderStatus
+
+Methods:
+- constructor
+- customerName()
+- status()
+- addProduct()
+- removeProduct()
+- totalCost()
+- totalItems()
+- markPaid()
+- markShipped()
+- cancel()
+- toString()                    
