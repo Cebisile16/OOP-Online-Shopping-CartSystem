@@ -26,18 +26,26 @@ Product(String productId, String name, double price)
 
 Rules
 productId cannot be null or blank
+
 name cannot be null or blank
+
 price must be greater than 0
+
 If any validation fails:
 throw new IllegalArgumentException
 
 Methods
+
 Getters
+
 String productId()
+
 String name()
+
 double price()
 
 definePrice
+
 void definePrice(double price)
 
 Rules:
@@ -48,9 +56,9 @@ toString
 
 Must include:
 
-productId
-name
-price
+productId,
+name,
+price,
 
 OrderStatus
 
@@ -75,18 +83,26 @@ ShoppingCart(String customerName)
 
 Rules
 customerName cannot be null or blank
+
 status defaults to:
+
 OrderStatus.PENDING
 
 Methods
+
+
 customerName
+
 String customerName()
 
 status
+
 OrderStatus status()
 
 addProduct
+
 void addProduct(Product product)
+
 Rules:
 
 product cannot be null
@@ -94,41 +110,55 @@ product cannot be null
 totalCost
 
 double totalCost()
+
 Returns the sum of all product prices.
 
 totalItems
+
 int totalItems()
 
 totalItems
+
 int totalItems()
+
 Returns the number of products in the cart.
 
 
 markPaid
+
 void markPaid()
 
 Sets status to:
 
 OrderStatus.PAID
+
+
+
 markShipped
+
 void markShipped()
 
 Sets status to:
 
 OrderStatus.SHIPPED
+
+
 cancel
+
 void cancel()
 
 Sets status to:
 
 OrderStatus.CANCELLED
+
+
 toString
 
 Must contain:
 
-customer name
-status
-total items
+customer name,
+status,
+total items.
 
 
 
