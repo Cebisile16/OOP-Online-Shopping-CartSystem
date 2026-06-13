@@ -20,7 +20,7 @@ productId	String
 name	String
 price	double
 
-Constructor
+Constructor[OrderStatus.java](src/main/java/com/shop/OrderStatus.java)
 Product(String productId, String name, double price)
 
 
