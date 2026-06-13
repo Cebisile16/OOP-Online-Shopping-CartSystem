@@ -20,7 +20,7 @@ productId	String
 name	String
 price	double
 
-Constructor[OrderStatus.java](src/main/java/com/shop/OrderStatus.java)
+Constructor
 Product(String productId, String name, double price)
 
 
@@ -61,7 +61,7 @@ name,
 price,
 
 OrderStatus
-
+[ShoppingCartTest.java](src/test/java/com/shop/ShoppingCartTest.java)
 Create an enum:
 PENDING
 PAID

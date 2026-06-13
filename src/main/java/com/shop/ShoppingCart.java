@@ -18,7 +18,7 @@ public class ShoppingCart {
 
     public ShoppingCart(String  customerName){
         this.customerName= customerName;
-        if (customerName ==null){
+        if (customerName.equals(null) || customerName.isEmpty()){
             throw new IllegalArgumentException(" name cannot be blank");
         }
         this.status= OrderStatus.PENDING;
@@ -38,6 +38,7 @@ public class ShoppingCart {
         if(product == null){
             throw new IllegalArgumentException("Please provide product name");
         }
+        products.add(product);
 
     }
     public double totalCost(){
